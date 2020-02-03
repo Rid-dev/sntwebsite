@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exo 3</title>
+  
+  <style>
+	h1{
+		text-align: center;
+		font-family: "Trebuchet MS";
+	}
+	p{
+		font-family: "Verdana";
+	}
+  </style>
+  
+</head>
+
+<body>
+  
+  
+<h1>Plusieurs pargraphes dans ce document ! </h1>  
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu lacus, consectetur et venenatis et, tempor id eros. Fusce sit amet laoreet ante. Nullam est turpis, egestas a dui porta, bibendum placerat erat. Donec eu nisl laoreet, semper risus at, euismod erat. Etiam faucibus, augue vel imperdiet pulvinar, nisi mi viverra justo, ac porttitor dui ipsum vitae lectus. Vestibulum bibendum vitae orci ut finibus. Donec lobortis urna in leo sollicitudin placerat.</p>
+
+<p class="pasouf">Cras nisi tortor, efficitur nec laoreet at, bibendum a velit. Suspendisse mollis lacus eu diam commodo, ac pellentesque nisl pharetra. Nam non aliquet lacus. Aenean sapien urna, egestas quis augue sit amet, lobortis rhoncus ligula. Nam fringilla mattis lorem quis feugiat. Maecenas porta tortor eget lobortis porta. Sed efficitur ipsum ut gravida posuere. Suspendisse vitae lacus commodo nunc dignissim commodo. Aliquam quis diam vel purus finibus elementum sit amet quis libero. Proin sit amet tristique enim, ac tempus ligula. Etiam elit nulla, malesuada ac vulputate quis, convallis et sapien. Pellentesque sed metus tortor. Nunc eu eros ipsum. Duis fermentum viverra leo, eget tristique tortor luctus non.</p>
+
+<p>Nullam et nulla tempor, elementum metus hendrerit, convallis massa. Curabitur nec lorem lorem. Morbi varius orci laoreet ligula scelerisque finibus. Fusce a vulputate quam, non commodo tellus. Donec nec lacus ut arcu ultricies tristique sed in ex. Vivamus egestas magna nec nulla mollis, a dapibus leo posuere. Mauris ac elementum mi. Nullam vehicula lacinia nulla, eget dictum enim congue non. Sed viverra sem nec ante tincidunt vestibulum. Nullam a est aliquet, auctor tortor vel, consectetur quam. Praesent malesuada elit ac elit porta sodales. Nulla auctor fringilla turpis sed lacinia. Vestibulum non fringilla dolor. Curabitur aliquet elit sem, at pulvinar turpis placerat eget. Quisque fermentum ornare eros, eget sodales ipsum congue vitae.</p>
+
+<p class="pasouf">Integer quis vehicula risus. Integer interdum feugiat ipsum quis venenatis. Nunc placerat, nulla quis cursus tincidunt, arcu lectus molestie velit, sed maximus sem enim in libero. Etiam gravida, arcu nec varius efficitur, mi tellus feugiat lorem, sit amet convallis orci diam ac nisl. Duis varius rhoncus nulla et varius. Nunc libero augue, tincidunt ut ligula at, egestas egestas risus. Mauris sodales condimentum sapien eget semper. Sed eleifend nibh id euismod ullamcorper. Mauris arcu quam, auctor id sem vitae, cursus elementum massa. Maecenas rhoncus, nulla eget sodales dictum, sapien tortor rutrum nunc, nec porta quam lacus laoreet libero. Ut sit amet sodales neque, vel egestas tortor.</p>
+
+<p class="pasouf">Vivamus eget risus sem. Aenean convallis sem tincidunt euismod sollicitudin. Vestibulum tempus, erat id lacinia feugiat, diam odio mattis neque, nec ornare nibh magna eu libero. Sed quis luctus sapien. Vestibulum sapien massa, commodo vel nisl ut, ultricies lacinia eros. Ut elementum risus ac augue sollicitudin, vitae fermentum tortor porttitor. Nulla quis dictum dui, nec consequat metus. Morbi sollicitudin enim est, a cursus est rhoncus in. </p>
+
+<div>Pour changer la couleur, cliquer sur ce bouton : <button type="button" id="button1" onclick="couleur()">Mettre de la couleur !!</button></div>
+
+<div>Pour changer la couleur, cliquer sur ce bouton : <button type="button" id="button2" onclick="enlever()">Faire disparaitre !</button></div>
+  
+  <script type="text/javascript">
+  // Ceci est un commentaire ! Cela ne sera pas exécuté par le navigateur 
+  // Il faut écrire le code JavaScript ici !!
+  
+  function couleur(){
+	ps = document.getElementsByTagName("p"); // On récupère tous les paragraphes ! ATTENTION, on obtient une liste et non un seul paragraphe !
+	n = ps.length;
+	for (var k = 0; k < n; k++) {
+			p = ps[k] // On récupère le paragraphe numéro k (k commençant à 0)
+			p.style.color = "red";
+		}
+  }
+  
+  function enlever(){
+	pasouf = document.getElementByClassName("pasouf")
+  }
+  </script>
+  
+  </body>
+  
+ 
+  
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: #ecf0f1;
+}
+
+.container{
+  /* font-family: 'Livvic', sans-serif; */
+  font-family: 'Nunito', sans-serif;
+  width: 1000px;
+  margin: 2em auto;
+  padding: 20px;
+  padding-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:hover {   
+  background: #CDFEAA;
+  outline: none;
+}
+
+li{
+  margin: 1em;
+}
+
+h1{
+    color: crimson;
+    /* font-family: 'Lobster', cursive; */
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.titreChap{
+    text-decoration: underline overline;
+    text-align: center;
+}

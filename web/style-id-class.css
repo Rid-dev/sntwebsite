@@ -1,0 +1,17 @@
+#introduction{
+	font-weight: bold;
+	color: blue;
+}
+
+#conclusion{
+	font-weight: bold;	
+	color: orange;
+}
+
+.texterouge{
+	color: red;
+}
+
+.textevert{
+	color: green;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exo 4</title>
+  
+  <style>
+	#affichage{
+	color: blue; 
+	margin: 25px;
+	}
+  </style>
+  
+</head>
+
+<body>
+
+  <h1>Encore un formulaire ! Mais avec un nouveau champ !</h1>
+  
+  <p>Entrer votre nom : <input id="nom" type="text"> </p>
+  <p>Entrer votre prenom : <input id="prenom" type="text"> </p>
+  
+  <p>
+    Chosir la ville : <select id="ville">
+    <option value="">ville</option>
+    <option value="78280">Guyancourt</option>
+    <option value="78114">Magny-les-Hameaux</option>
+    <option value="78180">Montigny-le-Bretonneux</option>
+    <option value="78960">Voisins-le-Bretonneux</option>
+    <option value="78000">Versailles</option>
+    </select>
+	
+  <button onclick="afficher()">Valider</button>
+  
+  <p id="affichage"></p>
+</div>
+  
+  
+  <script type="text/javascript">
+  // Ceci est un commentaire ! Cela ne sera pas exécuté par le navigateur 
+  // Il faut écrire le code JavaScript ici !!
+  
+  function afficher(){
+	var nom = document.getElementById("nom").value;
+	var prenom = document.getElementById("prenom").value;
+	var cp = document.getElementById("ville").value;
+	
+	var listes_ville = document.getElementById('ville');
+	var taille = listes_ville.length;
+	var ville = "";
+	
+	for (var k = 0; k < taille; k++) {
+		var bool = listes_ville.options[k].selected;
+		if (bool == true){
+			ville = listes_ville.options[k].innerHTML;
+		}
+	}
+	// var ville = document.getElementById('ville').options[1].selected
+	
+	var texte = "<p>Votre nom est "+nom+".</p>";
+	texte+=  "<p>Votre prenom est "+prenom+".</p>";
+	texte+=  "<p>Vous habitez à "+ville+".</p>";
+	texte+=  "<p>Le code postal est "+cp+".</p>";
+	
+	var reponse = document.getElementById("affichage");
+	affichage.innerHTML = texte;
+  }
+  </script>
+
+</body>
+  
+  
+  
+</html>

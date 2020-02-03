@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exo 2</title>
+  
+  <style>
+	#reponse{
+	color: green; 
+	}
+  </style>
+  
+</head>
+
+<body>
+  
+  <h1>Faire la somme ...</h1>
+  
+  <p>Entrer le premier nombre : <input type="text" id="number1" name="number1"></p>
+  
+  <p>Entrer le deuxième nombre : <input type="text" id="number2" name="number2"></p>
+  
+  <button type="button" id="valider" onclick = somme()>Calculer la somme</button>
+  
+  <p id="reponse"></p>
+  
+  
+  <script type="text/javascript">
+  // Ceci est un commentaire ! Cela ne sera pas exécuté par le navigateur 
+  // Il faut écrire le code JavaScript ici !!
+  
+  function somme(){
+	var input1 = document.getElementById("number1")
+	var input2 = document.getElementById("number2")
+	
+	var nombre1 = input1.value;
+	var nombre2 = input2.value;
+	
+	var somme = parseInt(nombre1) + parseInt(nombre2);
+	
+	var texte = "La somme de "+nombre1+" et de "+nombre2+" vaut "+somme;
+	
+	var para = document.getElementById("reponse");
+	para.innerHTML = texte;
+  }
+  </script>
+
+</body>
+  
+  
+  
+</html>

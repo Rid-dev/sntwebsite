@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exo 2</title>
+  
+  <style>
+	#reponse{
+	color: green; 
+	}
+  </style>
+  
+</head>
+
+<body>
+  
+  <h1>Manipuler un champ de formulaire ...</h1>
+  
+  <p>Entrer votre prénom : <input type="text" id="name" name="name"></p>
+  
+  <button type="button" id="valider" onclick = afficher()>Afficher mon prenom</button>
+  
+  <p id="reponse"></p>
+  
+  
+  <script type="text/javascript">
+  // Ceci est un commentaire ! Cela ne sera pas exécuté par le navigateur 
+  // Il faut écrire le code JavaScript ici !!
+  
+  function afficher(){
+	var input = document.getElementById("name");  // On récupère l'élément input 
+	// Le mot clé var permet d'initialiser une variable
+	
+	var nom = input.value; // Dans l'élément input, on veut sa valeur
+	
+	var texte = "Je m'appelle "+nom; // On prépare le texte que l'on veut afficher.
+	
+	var para = document.getElementById("reponse"); // On récupère le paragraphe qui nous intéresse
+	para.innerHTML = texte; // On affiche dans le paragraphe notre texte modifié !!
+  }
+  </script>
+
+</body>
+  
+  
+  
+</html>
